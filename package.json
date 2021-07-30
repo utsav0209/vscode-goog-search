@@ -1,7 +1,7 @@
 {
   "name": "goog-search",
-  "displayName": "goog-search",
-  "description": "",
+  "displayName": "Google Search",
+  "description": "Open default browser windows to search selected text in editor",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.58.0"
@@ -10,14 +10,36 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:goog-search.helloWorld"
+    "onCommand:goog-search.editor",
+    "onCommand:goog-search.terminal"
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "goog-search.editor",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "goog-search.editor",
+        "key": "Ctrl+Shift+g",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "goog-search.terminal",
+        "key": "Ctrl+Shift+g",
+        "when": "terminalTextSelected"
+      }
+    ],
     "commands": [
       {
-        "command": "goog-search.helloWorld",
-        "title": "Hello World"
+        "command": "goog-search.editor",
+        "title": "Search with Google"
       }
     ]
   },
