@@ -4,6 +4,9 @@
   "description": "Open default browser windows to search selected text in editor",
   "version": "0.0.1",
   "publisher": "UtsavVaria",
+  "repository": {
+    "url": "https://github.com/utsav0209/vscode-goog-search"
+  },
   "engines": {
     "vscode": "^1.58.0"
   },
