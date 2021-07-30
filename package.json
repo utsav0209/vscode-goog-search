@@ -3,6 +3,7 @@
   "displayName": "Google Search",
   "description": "Open default browser windows to search selected text in editor",
   "version": "0.0.1",
+  "publisher": "UtsavVaria",
   "engines": {
     "vscode": "^1.58.0"
   },
