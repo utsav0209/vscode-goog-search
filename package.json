@@ -2,7 +2,7 @@
   "name": "goog-search",
   "displayName": "Google Search",
   "description": "Open default browser windows to search selected text in editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "UtsavVaria",
   "repository": {
     "url": "https://github.com/utsav0209/vscode-goog-search"
@@ -43,7 +43,11 @@
     "commands": [
       {
         "command": "goog-search.editor",
-        "title": "Search with Google"
+        "title": "Search with Google: Editor"
+      },
+      {
+        "command": "goog-search.terminal",
+        "title": "Search with Google: Terminal"
       }
     ]
   },
